@@ -1,0 +1,11 @@
+[Unit]
+Description=Payroll Service
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/payroll-service
+ExecStart=/usr/bin/python3 -m http.server 8081
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

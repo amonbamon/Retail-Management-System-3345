@@ -1,0 +1,11 @@
+[Unit]
+Description=Order Management Service
+After=network.target
+
+[Service]
+WorkingDirectory=/opt/order-management-service
+ExecStart=/usr/bin/python3 -m http.server 8083
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

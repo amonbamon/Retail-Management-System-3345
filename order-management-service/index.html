@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Order Management</title>
+</head>
+<body>
+
+<h1>Order Management</h1>
+
+<table border="1" id="ordersTable">
+
+<tr>
+<th>Type</th>
+<th>Product</th>
+<th>Quantity</th>
+</tr>
+
+<tr>
+<td>Store Supply</td>
+<td>Receipt Paper</td>
+<td>25</td>
+</tr>
+
+<tr>
+<td>Customer Product</td>
+<td>Gaming Keyboard</td>
+<td>10</td>
+</tr>
+
+</table>
+
+<br>
+
+Type:
+
+<select id="type">
+<option>Store Supply</option>
+<option>Customer Product</option>
+</select>
+
+Product:
+
+<input id="product">
+
+Quantity:
+
+<input id="quantity">
+
+<button onclick="submitOrder()">
+Submit Order
+</button>
+
+app.jsscript>
+
+</body>
+</html>

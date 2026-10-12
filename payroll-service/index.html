@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payroll Service</title>
+</head>
+<body>
+
+<h1>Payroll Service</h1>
+
+<p>Total Labor Budget: <b>160</b> hrs</p>
+
+<p>
+Current Labor Used:
+<span id="usedHours"></span> hrs
+</p>
+
+<table border="1" id="scheduleTable">
+<tr>
+    <th>Employee</th>
+    <th>Shift</th>
+    <th>Hours</th>
+</tr>
+
+<tr>
+    <td>John</td>
+    <td>Mon 9-5</td>
+    <td>8</td>
+</tr>
+
+<tr>
+    <td>Sarah</td>
+    <td>Tue 8-4</td>
+    <td>8</td>
+</tr>
+
+<tr>
+    <td>Mike</td>
+    <td>Wed 10-6</td>
+    <td>8</td>
+</tr>
+
+<tr>
+    <td>Emily</td>
+    <td>Thu 1-9</td>
+    <td>8</td>
+</tr>
+
+</table>
+
+<h3>Add Shift</h3>
+
+Employee:
+<input id="employee">
+
+Shift:
+<input id="shift">
+
+Hours:
+<input id="hours" type="number">
+
+<button onclick="addShift()">Add Shift</button>
+<button onclick="removeShift()">Remove Last Shift</button>
+
+app.jsscript>
+
+</body>
+</html>
